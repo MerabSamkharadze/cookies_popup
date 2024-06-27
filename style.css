@@ -22,7 +22,7 @@ body {
   position: fixed;
   bottom: 150px;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.768);
+  background-color: rgba(16, 49, 120, 0.582);
   z-index: 1;
 }
 .cookies {
@@ -42,6 +42,11 @@ body {
   padding: 8px 12px;
   font-size: 1rem;
   font-family: inherit;
+}
+#cookies_btn:hover {
+  background-color: #fff;
+  border: 3px solid black;
+  color: black;
 }
 .cookies a {
   color: yellow;
