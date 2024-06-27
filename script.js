@@ -14,3 +14,20 @@ function setCookie(cName, cValue, expDays) {
   const expires = "expires" + date.toUTCString();
   document.cookie = cName + "=" + cValue + ";" + expires + " path=/";
 }
+
+function getCookie(cName) {
+  const name = cName + "=";
+  const cDecoded = decodeURIComponent(document.cookie);
+  const cArr = cDecoded.split("; ");
+  let value;
+  cArr.forEach((val) => {
+    if (val.indexOf(name) === 0) value = val.substring(name.length);
+  });
+  return value;
+}
+
+function cookieMsg() {
+  if (!getCookie("cookie")) cookies.style.display = "block";
+}
+
+window.addEventListener("load", cookieMsg);
