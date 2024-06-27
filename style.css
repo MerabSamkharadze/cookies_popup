@@ -24,6 +24,7 @@ body {
   color: #fff;
   background-color: rgba(16, 49, 120, 0.582);
   z-index: 1;
+  display: none;
 }
 .cookies {
   min-height: 70px;
